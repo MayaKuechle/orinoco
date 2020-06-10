@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="description" content="Camera Vintage Store">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Cameras">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/contact.js"></script>
+
+    <title>Orinoco - Vintage Cameras</title>
+
+</head>
+
+<body>
+    
+<div class="container-fluid">
+    <div class="col-md-6">
+        <nav role="navigation">
+            <div id="menuToggle">
+        
+            <input type="checkbox" />
+            
+            <span></span>
+            <span></span>
+            <span></span>
+        
+            <ul id="menu">
+                <a href="sales.html"><li>Sales</li></a>
+                <a href="contact.html"><li>Contact</li></a>
+            </ul>
+            </div>
+        </nav>
+        
+    </div>
+    <a class="navbar-brand orinoco-logo" href="sales.html"><img src="img/logosimple.jpg"><img/></a>
+    <div class="cart">
+        <a class="cartheader" href="cart.html"><img src="img/cart.png"><img/></a>
+    </div>
+
+    <div class="spacefiller">
+
+    </div>
+
+    <div class="row">
+		<div class="col-md-6">
+            <div class="intro">
+                <h1>
+                    Contact
+                </h1>
+                <p>
+                   Make sure to leave us a message, whether you have a question or an issue with your purchase, make sure to let us know!
+                </p>
+            </div>
+        </div>
+        <div class="col-md-6">
+
+        </div>
+    </div>
+    
+	<div class="row">
+		<div class="col-md-6">
+            <form class="form-group" action="https://formspree.io/mayakuechle@gmail.com"method="POST">
+                <label>
+                    Email
+                    <input type="email" name="email" class="email"/>
+                </label><br>
+                <label>
+                    Subject
+                    <input type="text" name="subject" class="subject"/>
+                </label><br>
+                <label>
+                    Message
+                    <textarea name="message" class="message"></textarea>
+                </label><br>
+                <div class="status">
+                </div>
+                <button type="submit" class="submit">
+                    Send
+                </button>
+            </form>
+        </div>
+
+        <div class="col-md-6">
+            <div class="row">
+                    <div class="jumbotron">
+                        <h3>
+                            You want to sell your vintage camera?
+                        </h3>
+                        <p>
+                            No problem! We are always on the look-out for new vintage cameras. How we sell our products and what percentage you get will be explained on the link below. 
+                        </p>
+                        <div id="myNav" class="overlay">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNavContact()">&times;</a>
+                            <div class="overlay-content">
+                                <h3 class="h3explanation">
+                                    How to sell your vintage camera?
+                                </h3>
+                                <p class="explanation">
+                                   If you have an old vintage camera and want to sell it, let us know. We are always on the lookout for great new vintage models. All you need to do is send us some photos and background information about the camera to <strong>vintagecameras@orinoco.com</strong>. We will then verify the worth and let you know how much we would sell it for. If you are happy with the price, we will send you a contract and the selling begins!</br>
+                                </p>
+                            </div>
+                        </div>
+                        <p class="learnmore">
+                            <a class="btn btn-primary btn-large"><span style="font-size:20px;cursor:pointer" onclick="openNavContact()">Learn more</span></a>
+                        </p>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="footer">  
+        <div class="col-md-12" style="text-align: center;">     
+            <strong><b>Orinoco</b> </br> Vintage Camera Store</strong>
+            <br> 795 Folsom Ave, Suite 600<br> San Francisco, CA 94107<br>
+            <br>E-mail: vintage@orinoco.com<br>Phone: 022 / 029 89 74<br>
+            <br>©Orinoco
+        </div>
+    </div>
+</div>    
+
+  </body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="description" content="Camera Vintage Store">
+    <meta name="author" content="Cameras">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/cart.js" async></script>
+
+
+    <title>Orinoco - Vintage Cameras</title>
+
+</head>
+
+<body>
+
+
+<div class="container-fluid">
+
+    <div class="col-md-6">
+        <nav role="navigation">
+            <div id="menuToggle">
+        
+                <input type="checkbox" />
+                
+                <span></span>
+                <span></span>
+                <span></span>
+            
+                <ul id="menu">
+                    <a href="sales.html"><li>Sales<span class="sr-only">(current)</span></li></a>
+                    <a href="contact.html"><li>Contact</li></a>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <a class="navbar-brand orinoco-logo" href="sales.html"><img src="img/logosimple.jpg"><img/></a>
+    <div class="cart">
+        <a class="cartheadercart" href="cart.html"><img src="img/cart.png"><img/></a>
+    </div>
+
+    <div class="spacefiller">
+
+    </div>
+
+    <div class="row">
+		<div class="col-md-12">
+            <div class="intro">
+                <h2 class="section-header">CART</h2>
+                <p class="cartintro">Please fill out all the following fields before proceeding to the checkout.</p>
+            </div>
+
+            <form class="form-group cartform">
+                <label>
+                    First Name
+                    <input type="text" name="fname" class="fname"/>
+                </label><br>
+                <label>
+                    Last Name
+                    <input type="text" name="lname" class="lname"/>
+                </label><br>
+                <label>
+                    Email
+                    <input type="email2" name="email2" class="email2"/>
+                </label><br>
+                <label>
+                    Address
+                    <input type="text" name="address" class="address"/>
+                </label><br>
+                <label>
+                    City
+                    <input type="text" name="city" class="city"/>
+                </label><br>
+                <div class="status">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="products-container">
+        <div class="col-md-12">
+            <section class="container content-section">
+                <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">ITEM</span>
+                    <span class="cart-price cart-header cart-column">PRICE</span>
+                    <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                </div>
+
+                <div id="cart-row-two"></div>
+
+                <div id="cart-total"></div>
+
+                <button class="btn btn-purchase submit" id="sendbutton" type="button">CHECKOUT</button>
+            </section>
+        </div>
+    </div> 
+</div>	
+
+
+<div class="row">
+    <div class="footer">  
+        <div class="col-md-12" style="text-align: center;">     
+            <strong><b>Orinoco</b> </br> Vintage Camera Store</strong>
+            <br> 795 Folsom Ave, Suite 600<br> San Francisco, CA 94107<br>
+            <br>E-mail: vintage@orinoco.com<br>Phone: 022 / 029 89 74<br>
+            <br>©Orinoco
+        </div>
+    </div>
+</div>    
+
+  </body> 
+
+</html>
