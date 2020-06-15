@@ -28,6 +28,7 @@ function getCartItems () {
         contentType: 'application/json',
         success: function(data){
             updatePage (data, quantity);
+            window.localStorage.clear();
         },
             error: function(jqXhr, textStatus, errorThrown) {
         console.log(errorThrown);

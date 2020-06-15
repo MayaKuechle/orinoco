@@ -63,17 +63,49 @@ $(document).ready(function() {
                 console.log(cartProducts);
             }
 
+            var order = {"contact":{
+                "firstName": $('.fname').val(),
+                "lastName": $('.lname').val(),
+                "address": $('.address').val(),
+                "city": $('.city').val(),
+                "email": $('.email2').val()
+                //"zip":
+                },
+                "products": cartProducts
+            };
+
+            sendOrder(order);
+
             window.location.href = "order.html";
         }
     })
 })  
+
+var url = "http://localhost:3000/api/cameras/order";
 
 /* This function calls the getCartItems function */
 $(document).ready(function () {
     getCartItems();
 });
 
-    var totalPrice = 0;
+function sendOrder(order) {
+        $.ajax({
+            type: "POST",
+            url: url,
+            dataType: "json",
+            contentType: 'application/json',
+            data: JSON.stringify(order),
+            success: function(data){ 
+                console.log (data);
+                //window.localStorage.clear();
+            },
+                error: function(jqXhr, textStatus, errorThrown) {
+            console.log(errorThrown);
+        }
+    });
+}
+
+var totalPrice = 0;
 
 /* This function gets the cart items from the localStorage */
 function getCartItems () {
@@ -92,6 +124,7 @@ function getCartItems () {
         contentType: 'application/json',
         success: function(data){
             updatePage (data, quantity);
+            //window.localStorage.clear();
         },
             error: function(jqXhr, textStatus, errorThrown) {
         console.log(errorThrown);

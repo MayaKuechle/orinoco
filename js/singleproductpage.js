@@ -67,7 +67,9 @@ for (let i=0; i < carts.length; i++) {
     })
 }
 
-/* This function makes sure that the item gets added properly to the localStorage. It makes sure that the localStorage shows not only the id but also the correct quantity selected with the TouchSpin on localStorage */
+/* This function makes sure that the item gets added properly to the localStorage. 
+//It makes sure that the localStorage shows not only the id but also the correct quantity 
+selected with the TouchSpin on localStorage */
 function setItems(products) {
     let cartItems = localStorage.getItem('OrinocoCart');
     cartItems=JSON.parse(cartItems);
@@ -84,12 +86,15 @@ function setItems(products) {
         var spinner = $("input[name='demo3']").val();
         
         cartItems[id] = spinner;
+        
     } else {
         cartItems = {
             [id]: 1
-     }
+        }
+        var spinner = $("input[name='demo3']").val();
+        
+        cartItems[id] = spinner;
     }
-
     localStorage.setItem("OrinocoCart", JSON.stringify (cartItems));
 }
 
