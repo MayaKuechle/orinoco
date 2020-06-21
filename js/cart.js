@@ -69,7 +69,6 @@ $(document).ready(function() {
                 "address": $('.address').val(),
                 "city": $('.city').val(),
                 "email": $('.email2').val()
-                //"zip":
                 },
                 "products": cartProducts
             };
